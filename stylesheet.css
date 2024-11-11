@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Centering the Form Container */
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Welcome Message */
+h1 {
+    font-size: 2em; /* Larger font size for the welcome message */
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Label Styles */
+label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: #555;
+    text-align: left;
+}
+
+/* Input Field Styles */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4d4d; /* Orange-red color */
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth color change on hover */
+}
+
+button:hover {
+    background-color: #e04343; /* Darker orange-red when hovered */
+}
+
+/* Small Device (Mobile) - Media Query */
+@media (max-width: 600px) {
+    /* Adjust the font size for smaller screens */
+    h1 {
+        font-size: 1.8em;
+    }
+
+    label, input, button {
+        font-size: 1em;
+    }
+
+    .form {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    input[type="text"] {
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+
+    button {
+        padding: 14px;
+    }
+}
+
+/* Medium Devices (Tablets) - Media Query */
+@media (max-width: 768px) {
+    .form {
+        max-width: 80%;
+    }
+
+    input[type="text"], button {
+        font-size: 1.1em;
+    }
+
+    button {
+        padding: 14px;
+    }
+}
+
+/* Large Devices (Desktop) - Default Styles */
+@media (min-width: 769px) {
+    .form {
+        max-width: 500px;
+    }
+
+    button {
+        padding: 15px;
+    }
+}
