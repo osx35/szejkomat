@@ -14,7 +14,7 @@
     if(isset($_COOKIE['name'])){
         echo "<p>Witaj, " . htmlspecialchars($_COOKIE['name']) . "!</p>";
     } else {
-        header('Location: index.php');
+        header('Location: index.html');
     }
     ?>
     <form action="increment_shakes.php" method="post">
